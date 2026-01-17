@@ -1,0 +1,202 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 5,
+  "metadata": {
+    "language_info": {
+      "name": "java"
+    }
+  },
+  "cells": [
+    {
+      "id": "d8d5a904-67a9-4a0e-a268-65bccd8c0746",
+      "cell_type": "markdown",
+      "source": "# Learning Of JAVA\nTo Learn JAVA, I'll Take 2 months, Inshallah",
+      "metadata": {
+        "language": "markdown",
+        "id": "d8d5a904-67a9-4a0e-a268-65bccd8c0746"
+      }
+    },
+    {
+      "id": "43b2646f-4e87-4df1-9f77-1d7373835410",
+      "cell_type": "code",
+      "source": "System.out.println(\"Hello World\");",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "2a0dc61a-c97d-402c-8f73-67496f3771fd",
+      "cell_type": "code",
+      "source": "System.out.println(\"This is my first print in java\");",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "e5c129f5-c5c0-4ba3-99f1-91d68fa1b0a8",
+      "cell_type": "code",
+      "source": "System.out.println(\"My Java Program\");",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "6d0501a1-9900-4e0f-b11d-6528afe131c4",
+      "cell_type": "code",
+      "source": "System.out.print(\"This will print in same line\");\r\nSystem.out.print(\"The Text will append of the privious\");\r\nSystem.out.println(\"But this will take the full line!\");\r\nSystem.out.print(\"Why println don't take the full?\");",
+      "metadata": {
+        "language": "java",
+        "executionSummary": {
+          "executionOrder": 6,
+          "success": true
+        }
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "This will print in same lineThe Text will append of the priviousBut this will take the full line!\r\nWhy println don't take the full?"
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "id": "7b905cc9-ece7-4e24-9195-3641723421fe",
+      "cell_type": "code",
+      "source": "//This is a java comment\r\n\r\n/* This is also \r\na comment\r\nbut its multi line\r\ncomment */",
+      "metadata": {
+        "language": "java",
+        "executionSummary": {
+          "executionOrder": 7,
+          "success": true
+        }
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {},
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "id": "d7dba07d-1551-4d23-9a87-16cfc3d88179",
+      "cell_type": "markdown",
+      "source": "## Variables\r\n\r\n| Data Type  | Description                                | Example        |\r\n|-----------|--------------------------------------------|----------------|\r\n| String    | Stores text. Values are surrounded by double quotes | \"Hello\"        |\r\n| int       | Stores integers (whole numbers) without decimals | 123, -123      |\r\n| float     | Stores numbers with decimals               | 19.99, -19.99  |\r\n| char      | Stores single characters. Values are in single quotes | 'a', 'B'      |\r\n| boolean   | Stores values with two states: true or false | true, false    |\r\n\r\n\r\n### Key Notes\r\n- Systex: `type variableName = value;`\r\n- If you don't want others (or yourself) to overwrite existing values, use the `final` keyword (this will declare the variable as \"final\" or \"constant\", which means unchangeable and read-only):\r\n- Constant: `final` keyword is used to make the variable as constant: `final type variableName = value;`",
+      "metadata": {
+        "language": "markdown",
+        "id": "d7dba07d-1551-4d23-9a87-16cfc3d88179"
+      }
+    },
+    {
+      "id": "9b09421d-b98b-4795-8172-cbd303ec7ed3",
+      "cell_type": "code",
+      "source": "int a = 5;\r\nString varsity = \"Khlna University\";\r\nSystem.out.println(varsity);",
+      "metadata": {
+        "language": "java",
+        "executionSummary": {
+          "executionOrder": 11,
+          "success": true
+        }
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "Khlna University\r\n"
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "id": "569c7fa4-fcd1-447e-b1ea-ec5fb6b97703",
+      "cell_type": "code",
+      "source": "//You can't do\r\n\r\nfinal float result = 3.74f;\r\nresult = 3.89;\r\nSystem.out.println(result);",
+      "metadata": {
+        "language": "java",
+        "executionSummary": {
+          "executionOrder": 14,
+          "success": false
+        }
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "incompatible types: possible lossy conversion from double to float\nresult = 3.89;\n         ^--^\n3.74\r\n"
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "id": "0a639fe2-2b36-4c72-9aa3-4c8528f6bc28",
+      "cell_type": "code",
+      "source": "String firstName = \"Ahasan\";\r\nString lastName = \"Abdullah\";\r\nString fullName = firstName + \", \" + lastName;\r\nint x = 7, y =5;\r\n\r\nSystem.out.println(\"Hello! \" + firstName);\r\nSystem.out.println(fullName);\r\n\r\n//Play with numbers\r\nSystem.out.println(x+y);\r\nSystem.out.println(\"Sum: \" + x + y);",
+      "metadata": {
+        "language": "java",
+        "executionSummary": {
+          "executionOrder": 21,
+          "success": true
+        }
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "Hello! Ahasan\r\nAhasan, Abdullah\r\n12\r\nSum: 75\r\n"
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "id": "3b849058-ab4d-48f7-a9d2-027e8ec41333",
+      "cell_type": "code",
+      "source": "//Multiple variable \r\nint x=2, y=4, z=9;\r\nint x=y=z=9;",
+      "metadata": {
+        "language": "java",
+        "executionSummary": {
+          "executionOrder": 22,
+          "success": true
+        }
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {},
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "id": "fc0a9bff-2369-4ddf-8780-aa5e4e668fdf",
+      "cell_type": "markdown",
+      "source": "## Java Data Types\r\nAs explained in the previous chapter, a variable in Java must be a specified data type:\r\n\r\nExampleGet your own Java Server\r\n`int myNum = 5;           `    // Integer (whole number)\r\n`float myFloatNum = 5.99f;`    // Floating point number\r\n`char myLetter = 'D';     `    // Character\r\n`boolean myBool = true;   `    // Boolean\r\n`String myText = \"Hello\"; `    // String\r\n\r\nData types are divided into two groups:\r\n\r\nPrimitive data types - includes byte, short, int, long, float, double, boolean and char\r\nNon-primitive data types - such as String, Arrays and Classes (you will learn more about these in a later chapter)\r\nPrimitive Data Types\r\nA primitive data type specifies the type of a variable and the kind of values it can hold.\r\n\r\nThere are eight primitive data types in Java:\r\n\r\nData Type\tDescription\r\nbyte\tStores whole numbers from -128 to 127\r\nshort\tStores whole numbers from -32,768 to 32,767\r\nint\tStores whole numbers from -2,147,483,648 to 2,147,483,647\r\nlong\tStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807\r\nfloat\tStores fractional numbers. Sufficient for storing 6 to 7 decimal digits\r\ndouble\tStores fractional numbers. Sufficient for storing 15 to 16 decimal digits\r\nboolean\tStores true or false values\r\nchar\tStores a single character/letter or ASCII values",
+      "metadata": {
+        "language": "markdown",
+        "id": "fc0a9bff-2369-4ddf-8780-aa5e4e668fdf"
+      }
+    }
+  ]
+}
