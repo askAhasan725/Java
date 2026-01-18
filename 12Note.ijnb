@@ -51,44 +51,20 @@
       "cell_type": "code",
       "source": "System.out.print(\"This will print in same line\");\r\nSystem.out.print(\"The Text will append of the privious\");\r\nSystem.out.println(\"But this will take the full line!\");\r\nSystem.out.print(\"Why println don't take the full?\");",
       "metadata": {
-        "language": "java",
-        "executionSummary": {
-          "executionOrder": 6,
-          "success": true
-        }
+        "language": "java"
       },
-      "execution_count": 6,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": "This will print in same lineThe Text will append of the priviousBut this will take the full line!\r\nWhy println don't take the full?"
-          },
-          "metadata": {},
-          "execution_count": 6
-        }
-      ]
+      "execution_count": null,
+      "outputs": []
     },
     {
       "id": "7b905cc9-ece7-4e24-9195-3641723421fe",
       "cell_type": "code",
       "source": "//This is a java comment\r\n\r\n/* This is also \r\na comment\r\nbut its multi line\r\ncomment */",
       "metadata": {
-        "language": "java",
-        "executionSummary": {
-          "executionOrder": 7,
-          "success": true
-        }
+        "language": "java"
       },
-      "execution_count": 7,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {},
-          "metadata": {},
-          "execution_count": 7
-        }
-      ]
+      "execution_count": null,
+      "outputs": []
     },
     {
       "id": "d7dba07d-1551-4d23-9a87-16cfc3d88179",
@@ -104,98 +80,251 @@
       "cell_type": "code",
       "source": "int a = 5;\r\nString varsity = \"Khlna University\";\r\nSystem.out.println(varsity);",
       "metadata": {
-        "language": "java",
-        "executionSummary": {
-          "executionOrder": 11,
-          "success": true
-        }
+        "language": "java"
       },
-      "execution_count": 11,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": "Khlna University\r\n"
-          },
-          "metadata": {},
-          "execution_count": 11
-        }
-      ]
+      "execution_count": null,
+      "outputs": []
     },
     {
       "id": "569c7fa4-fcd1-447e-b1ea-ec5fb6b97703",
       "cell_type": "code",
       "source": "//You can't do\r\n\r\nfinal float result = 3.74f;\r\nresult = 3.89;\r\nSystem.out.println(result);",
       "metadata": {
-        "language": "java",
-        "executionSummary": {
-          "executionOrder": 14,
-          "success": false
-        }
+        "language": "java"
       },
-      "execution_count": 14,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": "incompatible types: possible lossy conversion from double to float\nresult = 3.89;\n         ^--^\n3.74\r\n"
-          },
-          "metadata": {},
-          "execution_count": 14
-        }
-      ]
+      "execution_count": null,
+      "outputs": []
     },
     {
       "id": "0a639fe2-2b36-4c72-9aa3-4c8528f6bc28",
       "cell_type": "code",
       "source": "String firstName = \"Ahasan\";\r\nString lastName = \"Abdullah\";\r\nString fullName = firstName + \", \" + lastName;\r\nint x = 7, y =5;\r\n\r\nSystem.out.println(\"Hello! \" + firstName);\r\nSystem.out.println(fullName);\r\n\r\n//Play with numbers\r\nSystem.out.println(x+y);\r\nSystem.out.println(\"Sum: \" + x + y);",
       "metadata": {
-        "language": "java",
-        "executionSummary": {
-          "executionOrder": 21,
-          "success": true
-        }
+        "language": "java"
       },
-      "execution_count": 21,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": "Hello! Ahasan\r\nAhasan, Abdullah\r\n12\r\nSum: 75\r\n"
-          },
-          "metadata": {},
-          "execution_count": 21
-        }
-      ]
+      "execution_count": null,
+      "outputs": []
     },
     {
       "id": "3b849058-ab4d-48f7-a9d2-027e8ec41333",
       "cell_type": "code",
       "source": "//Multiple variable \r\nint x=2, y=4, z=9;\r\nint x=y=z=9;",
       "metadata": {
-        "language": "java",
-        "executionSummary": {
-          "executionOrder": 22,
-          "success": true
-        }
+        "language": "java"
       },
-      "execution_count": 22,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {},
-          "metadata": {},
-          "execution_count": 22
-        }
-      ]
+      "execution_count": null,
+      "outputs": []
     },
     {
       "id": "fc0a9bff-2369-4ddf-8780-aa5e4e668fdf",
       "cell_type": "markdown",
-      "source": "## Java Data Types\r\nAs explained in the previous chapter, a variable in Java must be a specified data type:\r\n\r\nExampleGet your own Java Server\r\n`int myNum = 5;           `    // Integer (whole number)\r\n`float myFloatNum = 5.99f;`    // Floating point number\r\n`char myLetter = 'D';     `    // Character\r\n`boolean myBool = true;   `    // Boolean\r\n`String myText = \"Hello\"; `    // String\r\n\r\nData types are divided into two groups:\r\n\r\nPrimitive data types - includes byte, short, int, long, float, double, boolean and char\r\nNon-primitive data types - such as String, Arrays and Classes (you will learn more about these in a later chapter)\r\nPrimitive Data Types\r\nA primitive data type specifies the type of a variable and the kind of values it can hold.\r\n\r\nThere are eight primitive data types in Java:\r\n\r\nData Type\tDescription\r\nbyte\tStores whole numbers from -128 to 127\r\nshort\tStores whole numbers from -32,768 to 32,767\r\nint\tStores whole numbers from -2,147,483,648 to 2,147,483,647\r\nlong\tStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807\r\nfloat\tStores fractional numbers. Sufficient for storing 6 to 7 decimal digits\r\ndouble\tStores fractional numbers. Sufficient for storing 15 to 16 decimal digits\r\nboolean\tStores true or false values\r\nchar\tStores a single character/letter or ASCII values",
+      "source": "## Data Types\r\nAs explained in the previous chapter, a variable in Java must be a specified data type:\r\n\r\nExampleGet your own Java Server<pre>\r\n`int myNum = 5;`             Integer (whole number)\r\n`float myFloatNum = 5.99f:`  Floating point number\r\n`char myLetter = 'D';`       Character\r\n`boolean myBool = true;`     Boolean\r\n`String myText = \"Hello\":`   String\r\n</pre>\r\n\r\nData types are divided into two groups:\r\n\r\nPrimitive data types     - includes byte, short, int, long, float, double, boolean and char\r\nNon-primitive data types - such as String, Arrays and Classes (you will learn more about these in a later chapter)\r\n\r\n### Primitive Data Types\r\nA primitive data type specifies the type of a variable and the kind of values it can hold.\r\n\r\nThere are eight primitive data types in Java:\r\n\r\nData Type\tDescription<pre>\r\n`byte`\tStores whole numbers from -128 to 127\r\n`short`\tStores whole numbers from -32,768 to 32,767\r\n`int`\tStores whole numbers from -2,147,483,648 to 2,147,483,647\r\n`long`\tStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807\r\n`float`\tStores fractional numbers. Sufficient for storing 6 to 7 decimal digits\r\n`double`\tStores fractional numbers. Sufficient for storing 15 to 16 decimal digits\r\n`boolean`\tStores true or false values\r\n`char`\tStores a single character/letter or ASCII values\r\n</pre>",
       "metadata": {
         "language": "markdown",
         "id": "fc0a9bff-2369-4ddf-8780-aa5e4e668fdf"
+      }
+    },
+    {
+      "id": "3b3f480a-f932-4e16-a1f1-39159137e701",
+      "cell_type": "code",
+      "source": "boolean isLive = true;\r\nSystem.out.println(isLive);\r\n\r\nboolean isLive = 1;\r\nSystem.out.println(isLive);",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "a81a70a0-ba22-43a4-8124-d5a8df5f7626",
+      "cell_type": "code",
+      "source": "char letter = 'A';\r\nSystem.out.println(letter);\r\n\r\nchar myVar1 = 66, myVar2 = 67, myVar3 = 68; //ASCII Value of B,C,D....\r\nSystem.out.println(myVar1);\r\nSystem.out.println(myVar2);\r\nSystem.out.println(myVar3);",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "200fd2a5-98d0-4918-8a1e-bf66f15b5a8c",
+      "cell_type": "markdown",
+      "source": "The var keyword was introduced in Java 10 (released in 2018). The var keyword lets the compiler automatically detect the type of a variable based on the value you assign to it.",
+      "metadata": {
+        "language": "markdown",
+        "id": "200fd2a5-98d0-4918-8a1e-bf66f15b5a8c"
+      }
+    },
+    {
+      "id": "f2ee3dee-629b-4a84-a1a4-114cbe0f0242",
+      "cell_type": "code",
+      "source": "var x = 10; // hear x is int",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "1cdeca9c-dd0f-4f56-a7fc-3b6e0a016466",
+      "cell_type": "markdown",
+      "source": "## Type Casting\r\nType casting means converting one data type into another. For example, turning an int into a double. In Java, there are two main types of casting:\r\n\r\n- Widening Casting (automatic) - converting a smaller type to a larger type size <br>\r\n`byte` -> `short` -> `char` -> `int` -> `long` -> `float` -> `double`\r\n\r\n- Narrowing Casting (manual) - converting a larger type to a smaller type size <br>\r\n`double` -> `float` -> `long` -> `int` -> `char` -> `short` -> `byte`",
+      "metadata": {
+        "language": "markdown",
+        "id": "1cdeca9c-dd0f-4f56-a7fc-3b6e0a016466"
+      }
+    },
+    {
+      "id": "23055988-32b4-4202-8174-6df5b032daea",
+      "cell_type": "code",
+      "source": "int x = 5;\r\nfloat myDouble = x;\r\nSystem.out.println(x);                  //Int\r\nSystem.out.println(myDouble);           //Float/Double\r\nSystem.out.println((int) myDouble);     //Int",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "9bcb3281-bf94-4587-86ca-4d56e39f6a42",
+      "cell_type": "markdown",
+      "source": "### Oparators\r\n- iykyk",
+      "metadata": {
+        "language": "markdown",
+        "id": "9bcb3281-bf94-4587-86ca-4d56e39f6a42"
+      }
+    },
+    {
+      "id": "99281478-552d-4459-addd-0ddde518594b",
+      "cell_type": "markdown",
+      "source": "## String\r\n\r\n| **Method**                            | **Description**                                                               | **Example**                                  |\r\n| ------------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------- |\r\n| `length()`                            | Returns the number of characters in the string                                | `\"Hello\".length()` → `5`                     |\r\n| `toUpperCase()`                       | Converts all characters to uppercase                                          | `\"Hello\".toUpperCase()` → `\"HELLO\"`          |\r\n| `toLowerCase()`                       | Converts all characters to lowercase                                          | `\"Hello\".toLowerCase()` → `\"hello\"`          |\r\n| `indexOf(String str)`                 | Returns the index of the first occurrence of `str`; returns `-1` if not found | `\"Hello\".indexOf(\"l\")` → `2`                 |\r\n| `charAt(int index)`                   | Returns the character at the specified index                                  | `\"Hello\".charAt(1)` → `'e'`                  |\r\n| `equals(String str)`                  | Checks if two strings are exactly equal                                       | `\"Hello\".equals(\"Hello\")` → `true`           |\r\n| `equalsIgnoreCase(String str)`        | Checks equality ignoring case                                                 | `\"hello\".equalsIgnoreCase(\"HELLO\")` → `true` |\r\n| `trim()`                              | Removes leading and trailing whitespace                                       | `\"  Hello  \".trim()` → `\"Hello\"`             |\r\n| `substring(int beginIndex)`           | Returns substring from `beginIndex` to end                                    | `\"Hello\".substring(2)` → `\"llo\"`             |\r\n| `substring(int begin, int end)`       | Returns substring from `begin` (inclusive) to `end` (exclusive)               | `\"Hello\".substring(1,4)` → `\"ell\"`           |\r\n| `replace(char oldChar, char newChar)` | Replaces all occurrences of a character with another                          | `\"Hello\".replace('l','x')` → `\"Hexxo\"`       |\r\n| `contains(CharSequence s)`            | Checks if the string contains the given sequence                              | `\"Hello\".contains(\"ell\")` → `true`           |\r\n| `startsWith(String prefix)`           | Checks if the string starts with the specified prefix                         | `\"Hello\".startsWith(\"He\")` → `true`          |\r\n| `endsWith(String suffix)`             | Checks if the string ends with the specified suffix                           | `\"Hello\".endsWith(\"lo\")` → `true`            |\r\n| `split(String regex)`                 | Splits the string around matches of the given regex                           | `\"a,b,c\".split(\",\")` → `[\"a\",\"b\",\"c\"]`       |\r\n",
+      "metadata": {
+        "language": "markdown",
+        "id": "99281478-552d-4459-addd-0ddde518594b"
+      }
+    },
+    {
+      "id": "76f3f468-06a4-4feb-ab53-4058ead4c7fe",
+      "cell_type": "code",
+      "source": "String name = \"K.M. Ahasan Abdullah\";\r\nString name2 = \"Abdullah\";\r\nSystem.out.println(name.length()); \r\n\r\n//case change\r\nSystem.out.println(name.toUpperCase());\r\nSystem.out.println(name.toLowerCase());\r\nSystem.out.println(name.indexOf(\"Abdullah\"));     //Index of first letter, If not matches then -1\r\n\r\n//charAt\r\nSystem.out.println(name.charAt(19));    //Charecter at the index\r\n\r\n//equals\r\nSystem.out.println(name.equals(name2));  //fals\r\nSystem.out.println(name.equals(\"K.M. Ahasan Abdullah\"));  //true\r\n\r\n//trim: To remove extra space\r\nSystem.out.println(\"    Abdullah        \");\r\nSystem.out.println(\"    Abdullah        \".trim());\r\n\r\n//split\r\nString text = \"Hi this is a text, I'll convert it into an array of word, would you like to see!\";\r\nSystem.out.println(text.split(\",\"));",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "a9beb475-89f9-4eb8-b57d-3d9d24c8e549",
+      "cell_type": "code",
+      "source": "//concat\r\nString a = \"Java \";\r\nString b = \"is \";\r\nString c = \"fun!\";\r\nString result = a.concat(b).concat(c);\r\nSystem.out.println(result);",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "1b390a6b-daed-49df-af6a-5e874f619207",
+      "cell_type": "code",
+      "source": "int x = 10;\r\nint y = 20;\r\nSystem.out.println(x + y);  //30 (an integer/number)\r\n\r\nString x = \"10\";\r\nString y = \"20\";\r\nSystem.out.println(x + y);  //1020 (a String)",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "9fb2eef5-866b-4dbd-93df-df5d98131e22",
+      "cell_type": "markdown",
+      "source": "## Special Characters\r\n\r\n| **Escape Sequence** | **Description**                                     | **Example**                                                    |\r\n| ------------------- | --------------------------------------------------- | -------------------------------------------------------------- |\r\n| `\\n`                | New line (line break)                               | `\"Hello\\nWorld\"` →                                             |\r\n| `\\t`                | Horizontal tab                                      | <pre>`\"Hello\\tWorld\"` → `Hello    World` </pre>                |\r\n| `\\\\`                | Backslash character (`\\`)                           | `\"C:\\\\Users\\\\Name\"` → `C:\\Users\\Name`                          |\r\n| `\\'`                | Single quote                                        | `\"It\\'s OK\"` → `It's OK`                                       |\r\n| `\\\"`                | Double quote                                        | `\"He said, \\\"Hello\\\"\"` → `He said, \"Hello\"`                    |\r\n| `\\r`                | Carriage return (moves cursor to beginning of line) | `\"Hello\\rWorld\"` → may overwrite line depending on environment |\r\n| `\\b`                | Backspace                                           | `\"abc\\b\"` → `ab`                                               |\r\n| `\\f`                | Form feed                                           | `\"Hello\\fWorld\"` → adds a form feed (rarely used)              |\r\n| `\\uXXXX`            | Unicode character (hexadecimal)                     | `\"\\u03A9\"` → `Ω`                                               |\r\n",
+      "metadata": {
+        "language": "markdown",
+        "id": "9fb2eef5-866b-4dbd-93df-df5d98131e22"
+      }
+    },
+    {
+      "id": "6b905716-106c-414c-b040-abf9bf3d9af8",
+      "cell_type": "code",
+      "source": "//Special Characters\r\nSystem.out.println(\"Hell I'm \\\"Ahasan Abdullah\\\", do you know me?\")",
+      "metadata": {
+        "language": "java",
+        "id": "6b905716-106c-414c-b040-abf9bf3d9af8",
+        "executionSummary": {
+          "executionOrder": 1,
+          "success": true
+        }
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "Hell I'm \"Ahasan Abdullah\", do you know me?\r\n"
+          },
+          "metadata": {},
+          "execution_count": 1
+        }
+      ]
+    },
+    {
+      "id": "aafb1d29-21e0-4a77-9683-5c0bd9469404",
+      "cell_type": "markdown",
+      "source": "## Java `Math` Class – Built-in Methods Table\r\n\r\n| Method              | Description                       | Example (Result)           |\r\n| ------------------- | --------------------------------- | -------------------------- |\r\n| `Math.max(a, b)`    | Returns the larger of two values  | `Math.max(5,10)` → `10`    |\r\n| `Math.min(a, b)`    | Returns the smaller of two values | `Math.min(5,10)` → `5`     |\r\n| `Math.abs(x)`       | Absolute (positive) value         | `Math.abs(-7)` → `7`       |\r\n| `Math.sqrt(x)`      | Square root                       | `Math.sqrt(25)` → `5.0`    |\r\n| `Math.cbrt(x)`      | Cube root                         | `Math.cbrt(27)` → `3.0`    |\r\n| `Math.pow(a, b)`    | a raised to power b               | `Math.pow(2,3)` → `8.0`    |\r\n| `Math.round(x)`     | Rounds to nearest integer         | `Math.round(4.6)` → `5`    |\r\n| `Math.floor(x)`     | Rounds down                       | `Math.floor(4.9)` → `4.0`  |\r\n| `Math.ceil(x)`      | Rounds up                         | `Math.ceil(4.1)` → `5.0`   |\r\n| `Math.random()`     | Random number (0.0 to 1.0)        | `Math.random()`            |\r\n| `Math.log(x)`       | Natural log (base e)              | `Math.log(1)` → `0.0`      |\r\n| `Math.log10(x)`     | Base-10 log                       | `Math.log10(100)` → `2.0`  |\r\n| `Math.exp(x)`       | e^x                               | `Math.exp(1)` → `2.718`    |\r\n| `Math.sin(x)`       | Sine (radians)                    | `Math.sin(0)` → `0.0`      |\r\n| `Math.cos(x)`       | Cosine (radians)                  | `Math.cos(0)` → `1.0`      |\r\n| `Math.tan(x)`       | Tangent (radians)                 | `Math.tan(0)` → `0.0`      |\r\n| `Math.toRadians(x)` | Degrees → Radians                 | `Math.toRadians(180)`      |\r\n| `Math.toDegrees(x)` | Radians → Degrees                 | `Math.toDegrees(Math.PI)`  |\r\n| `Math.signum(x)`    | Returns sign (-1, 0, 1)           | `Math.signum(-5)` → `-1.0` |\r\n\r\n\r\n### Important Notes\r\n\r\n* All methods are **static**, so you call them using `Math.`\r\n* `Math` is in `java.lang` → **no import needed**\r\n* Trigonometric functions use **radians**, not degrees\r\n",
+      "metadata": {
+        "language": "markdown",
+        "id": "aafb1d29-21e0-4a77-9683-5c0bd9469404"
+      }
+    },
+    {
+      "id": "c917edf8-7efd-4ef6-bf67-0c459d609b8f",
+      "cell_type": "code",
+      "source": "System.out.println(Math.sin(Math.PI / 6));  //Trigonometry takes angle in redian",
+      "metadata": {
+        "language": "java",
+        "executionSummary": {
+          "executionOrder": 3,
+          "success": true
+        }
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "0.49999999999999994\r\n"
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "id": "a2b430c1-25ef-4273-8433-ad12a39bc72d",
+      "cell_type": "code",
+      "source": "System.out.println(Math.signum(-5));     //-1.0\r\nSystem.out.println(Math.signum(5));      //1.0\r\n\r\nSystem.out.println((int) Math.signum(-5));     //-1\r\nSystem.out.println((int) Math.signum(5));      //1",
+      "metadata": {
+        "language": "java",
+        "executionSummary": {
+          "executionOrder": 7,
+          "success": true
+        }
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "-1.0\r\n1.0\r\n-1\r\n1\r\n"
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "id": "eb8ffe4a-2316-48f6-864d-7c88bb506aff",
+      "cell_type": "markdown",
+      "source": "",
+      "metadata": {
+        "language": "markdown",
+        "id": "eb8ffe4a-2316-48f6-864d-7c88bb506aff"
       }
     }
   ]
